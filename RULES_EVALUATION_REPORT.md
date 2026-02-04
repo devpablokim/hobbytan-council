@@ -1,4 +1,4 @@
-# 📄 가재 컴퍼니 성과 평가 리포트 템플릿 (Template_EVALUATION_REPORT.md)
+# 📄 가재 컴퍼니 성과 평가 리포트 템플릿 (EVALUATION_REPORT.md)
 
 **피평가자:** [가재명] [성명] [현재레벨]
 **평가 기간:** [YYYY-MM-DD ~ YYYY-MM-DD]
