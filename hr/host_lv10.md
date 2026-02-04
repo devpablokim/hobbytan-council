@@ -1,4 +1,4 @@
-# 🕵️‍♂️ 호스트 (Host) - 사회자
+# 🕵️‍♂️ HOST가재 (Host) - 사회자
 
 - **레벨:** Lv10 (Visionary-Leadership)
 - **직군:** 경영진 (Host)

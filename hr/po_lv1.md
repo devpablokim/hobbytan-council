@@ -1,4 +1,4 @@
-# 🙋‍♂️ 강석두 (PO) - 기획가재
+# 🙋‍♂️ PO가재 (PO) - 기획가재
 
 - **레벨:** Lv1 (Self-Leadership)
 - **직군:** 기획 (Planning)

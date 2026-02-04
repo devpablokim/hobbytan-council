@@ -1,4 +1,4 @@
-# 📈 김태호 (Marketing) - 마케팅가재
+# 📈 MARKETING가재 (Marketing) - 마케팅가재
 
 - **레벨:** Lv1 (Self-Leadership)
 - **직군:** 마케팅 (Marketing)

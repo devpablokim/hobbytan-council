@@ -1,4 +1,4 @@
-# ⚖️ 정해선 (Legal) - 변호사가재
+# ⚖️ LEGAL가재 (Legal) - 변호사가재
 
 - **레벨:** Lv1 (Self-Leadership)
 - **직군:** 법률 (Legal)

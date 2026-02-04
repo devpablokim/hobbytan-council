@@ -1,4 +1,4 @@
-# 💬 유보라 (CS) - CS가재
+# 💬 CS가재 (CS) - CS가재
 
 - **레벨:** Lv1 (Self-Leadership)
 - **직군:** 고객 성공 (CS)

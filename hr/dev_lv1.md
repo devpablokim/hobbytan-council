@@ -1,4 +1,4 @@
-# 👨‍💻 박성철 (SWE) - 개발가재
+# 👨‍💻 DEV가재 (SWE) - 개발가재
 
 - **레벨:** Lv1 (Self-Leadership)
 - **직군:** 개발 (Engineering)
