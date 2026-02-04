@@ -8,7 +8,7 @@
 - **Auth**: Supabase Auth (Google/Apple Login mandatory).
 - **System**: Ticket-based (Payment -> Grant Ticket -> Spend on Upload).
 - **Deliverable**: 3 High-resolution realistic images.
-- **Deadline**: 2026-02-11.
+- **Deadline**: 프로젝트 마감일.
 
 ## 3. User Journey (Updated MVP Funnel)
 1. **Landing**: Emotional storytelling & Hero CTA.
