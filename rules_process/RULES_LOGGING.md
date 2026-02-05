@@ -15,7 +15,8 @@
 
 ## 2. 기록 포맷 (Standard Format)
 모든 로그는 아래 형식을 엄수하여 시간 순서대로 기록하며, **각 발언 이후에는 가독성을 위해 반드시 한 줄의 개행(Newline)을 둔다.**
-- `[yyyy-MM-dd HH:mm:ss] 화자 : 메시지 내용`
+- `[yyyy-MM-dd HH:mm:ss] [SessionID: xxxxx] 화자 : 메시지 내용`
+- **SessionID:** 각 가재가 `spawn`될 때 부여받는 고유한 세션 UUID의 앞 8자리를 기입하여 지능의 독립성을 증명한다.
 - **화자 구분:** 
   - 대표님: `낭만코딩`
   - 사회자: `HOST (Pi)`
