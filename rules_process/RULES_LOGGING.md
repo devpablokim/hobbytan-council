@@ -23,8 +23,8 @@
 - **세션 구분:** 미팅이나 특정 업무 세션의 경우 `--- [Session: 주제명] ---` 구분선을 사용한다.
 
 ## 3. 기록 대상
-- **External:** 대표님과의 텔레그램/슬랙 등 모든 채널 대화 및 보고서.
-- **Internal:** 가재들 간의 `sessions_send`, `sessions_spawn`을 통한 업무 협의 및 회의록.
+- **External:** 대표님과의 모든 대화(Telegram), 사회자(Host)의 모든 보고 메시지.
+- **Internal:** 가재들 간의 업무 협의(Sessions) 및 가재들의 **내부 추론 과정(Internal Thoughts/Monologue)**.
 
 ## 4. 자율 커밋 및 무결성
 - **커밋 주기:** 모든 가재는 보고서 작성 또는 대화 기록 추가 후 즉시 **자율 커밋(Self-Commit)**을 수행하여 기록의 손실을 방지한다.
