@@ -3,370 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOBBYTAN-COUNCIL: Build in Public - Control Terminal</title>
+    <title>HOBBYTAN-COUNCIL: The Boardroom (Live)</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         :root {
-            --gold: #FFD700;
-            --gold-glow: rgba(255, 215, 0, 0.4);
-            --bg-dark: #0a0a0b;
-            --panel-bg: rgba(20, 20, 22, 0.95);
-            --border-color: rgba(255, 215, 0, 0.15);
+            --neon-blue: #00f3ff;
+            --neon-green: #0aff00;
+            --bg-color: #050505;
+            --panel-bg: rgba(20, 20, 20, 0.9);
             --text-main: #e0e0e0;
-            --text-dim: #666;
-            --accent-blue: #4a9eff;
+            --text-dim: #555;
+            --border: 1px solid rgba(0, 243, 255, 0.2);
         }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--bg-dark);
+        body {
+            background-color: var(--bg-color);
             color: var(--text-main);
-            font-family: 'JetBrains Mono', 'Fira Code', monospace;
-            overflow: hidden;
-        }
-
-        #terminal-layout {
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0; padding: 20px;
+            height: 100vh; overflow: hidden;
             display: grid;
-            grid-template-columns: 350px 1fr 350px;
-            grid-template-rows: 80px 1fr 280px;
-            width: 100vw;
-            height: 100vh;
-            gap: 15px;
-            padding: 20px;
-            box-sizing: border-box;
+            grid-template-rows: 60px 1fr;
+            gap: 20px;
         }
-
-        /* --- Header: Brand Identity --- */
         header {
-            grid-column: 1 / 4;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid var(--border-color);
-            padding: 0 10px;
+            border-bottom: var(--border);
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0 20px;
         }
-
-        .brand-name {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--gold);
-            letter-spacing: 2px;
-        }
-
-        .system-status {
-            font-size: 0.8rem;
-            color: var(--accent-blue);
-        }
-
-        /* --- 1. The Living Balance Sheet (Center) --- */
-        .main-viz {
-            grid-column: 2;
-            grid-row: 2;
-            background: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 4px;
-        }
-
-        .root-orb-container {
-            position: absolute;
-            top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .root-orb {
-            width: 50px;
-            height: 50px;
-            background: radial-gradient(circle, var(--gold) 0%, #8b6b00 100%);
-            border-radius: 50%;
-            box-shadow: 0 0 20px var(--gold-glow);
-            z-index: 100;
-        }
-
-        .viz-label {
-            font-size: 0.7rem;
-            color: var(--gold);
-            margin-top: 10px;
-            text-transform: uppercase;
-        }
-
-        canvas#intelligence-graph {
-            width: 100%;
+        .brand { font-size: 1.5rem; font-weight: bold; color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue); }
+        .status { font-size: 0.8rem; color: var(--neon-green); }
+        
+        #terminal-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
             height: 100%;
         }
-
-        /* --- 2. Public Ledger (Left) --- */
-        .ledger-panel {
-            grid-column: 1;
-            grid-row: 2 / 4;
+        
+        .sidebar {
+            border: var(--border);
             background: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            border-radius: 4px;
-        }
-
-        .panel-title {
-            font-size: 0.8rem;
-            color: var(--gold);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .ledger-entries {
-            flex: 1;
+            padding: 20px;
             overflow-y: auto;
-            font-size: 0.75rem;
+        }
+        
+        .main-log {
+            border: var(--border);
+            background: var(--panel-bg);
+            padding: 20px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            font-size: 0.9rem;
             line-height: 1.6;
         }
 
-        .entry {
-            margin-bottom: 8px;
-            border-left: 2px solid #333;
-            padding-left: 10px;
-            opacity: 0.8;
-        }
+        .log-entry { margin-bottom: 15px; border-left: 3px solid var(--text-dim); padding-left: 10px; }
+        .log-time { color: var(--text-dim); font-size: 0.75rem; }
+        .log-author { color: var(--neon-blue); font-weight: bold; }
+        .log-content { margin-top: 5px; }
 
-        .timestamp { color: var(--text-dim); margin-right: 5px; }
-        .action { color: var(--accent-blue); }
-
-        /* --- 3. Operational Blueprint (Right) --- */
-        .blueprint-panel {
-            grid-column: 3;
-            grid-row: 2 / 4;
-            background: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            padding: 15px;
-            border-radius: 4px;
-        }
-
-        .blueprint-item {
-            background: rgba(255, 255, 255, 0.02);
-            padding: 12px;
-            margin-bottom: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .item-title { font-size: 0.8rem; color: var(--gold); margin-bottom: 5px; }
-        .item-desc { font-size: 0.7rem; color: var(--text-dim); }
-
-        /* --- 5. Eco-System Sponsorship (Right Bottom) --- */
-        .sponsor-panel {
-            grid-column: 3;
-            grid-row: 3;
-            background: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            padding: 15px;
-            border-radius: 4px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .sponsor-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .sponsor-box {
-            background: rgba(255, 215, 0, 0.03);
-            border: 1px dashed var(--border-color);
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.6rem;
-            color: var(--text-dim);
-            transition: all 0.3s ease;
-        }
-
-        .sponsor-box:hover {
-            background: rgba(255, 215, 0, 0.08);
-            border-style: solid;
-            color: var(--gold);
-            cursor: pointer;
-        }
-
-        /* --- 4. Investor & Contributor Feed (Bottom) --- */
-        .engagement-feed {
-            grid-column: 2;
-            grid-row: 3;
-            background: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            border-radius: 4px;
-        }
-
-        .feed-container {
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            padding-top: 10px;
-        }
-
-        .contribution-card {
-            min-width: 200px;
-            background: rgba(74, 158, 255, 0.05);
-            border: 1px solid rgba(74, 158, 255, 0.1);
-            padding: 10px;
-            font-size: 0.7rem;
-        }
-
-        .contributor { color: var(--accent-blue); font-weight: bold; }
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-track { background: #000; }
     </style>
 </head>
 <body>
-    <div id="terminal-layout">
-        <header>
-            <div class="brand-name">HOBBYTAN-COUNCIL: Build in Public</div>
-            <div class="system-status">● INFRASTRUCTURE ONLINE | INTELLIGENCE DENSITY: 87.4%</div>
-        </header>
+    <header>
+        <div class="brand">HOBBYTAN-COUNCIL: THE BOARDROOM</div>
+        <div class="status">● LIVE CONNECTION: GITHUB SANCTUARY</div>
+    </header>
 
-        <div class="ledger-panel">
-            <div class="panel-title">
-                <span>PUBLIC LEDGER</span>
-                <span style="color: var(--text-dim);">LIVE_STREAM</span>
-            </div>
-            <div class="ledger-entries" id="ledger">
-                <!-- Entries dynamic -->
-            </div>
+    <div id="terminal-container">
+        <div class="sidebar">
+            <h3 style="color: var(--neon-green); border-bottom: 1px solid #333; padding-bottom: 10px;">ACTIVE TAN NODES</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;">🟢 PO-TAN (Strategy)</li>
+                <li style="margin-bottom: 10px;">🟢 PM-TAN (Schedule)</li>
+                <li style="margin-bottom: 10px;">🟢 DEV-TAN (Tech)</li>
+                <li style="margin-bottom: 10px;">🟢 UX-TAN (Design)</li>
+                <li style="margin-bottom: 10px;">🟢 RESEARCHER-TAN (Data)</li>
+                <li style="margin-bottom: 10px;">🟢 LEGAL-TAN (Risk)</li>
+                <li style="margin-bottom: 10px;">🟢 MARKETING-TAN (Viral)</li>
+            </ul>
         </div>
-
-        <div class="main-viz">
-            <div class="root-orb-container">
-                <div class="root-orb"></div>
-                <div class="viz-label">ROOT_INTUITION_NODE</div>
-            </div>
-            <canvas id="intelligence-graph"></canvas>
-            <div style="position: absolute; bottom: 20px; text-align: center;">
-                <div style="font-size: 1.1rem; color: var(--gold); letter-spacing: 5px;">THE LIVING BALANCE SHEET</div>
-                <div style="font-size: 0.6rem; color: var(--text-dim); margin-top: 5px;">REAL-TIME ASSET GROWTH TRACKING</div>
-            </div>
-        </div>
-
-        <div class="blueprint-panel" style="grid-row: 2;">
-            <div class="panel-title">OPERATIONAL BLUEPRINT</div>
-            <div class="blueprint-item">
-                <div class="item-title">Parallel-Agent Protocol v1.2</div>
-                <div class="item-desc">에이전트 간의 연산 충돌 해결 및 리소스 최적화 로직.</div>
-            </div>
-            <div class="blueprint-item">
-                <div class="item-title">Shared Memory Schema</div>
-                <div class="item-desc">대표님의 철학을 데이터셋으로 전환하는 핵심 스키마.</div>
-            </div>
-            <div class="blueprint-item">
-                <div class="item-title">Autonomous HR Engine</div>
-                <div class="item-desc">TAN 군단의 성과 평가 및 레벨 업 자동화 시스템.</div>
-            </div>
-        </div>
-
-        <div class="sponsor-panel">
-            <div class="panel-title">OFFICIAL ECO-SYSTEM PARTNERS</div>
-            <div class="sponsor-grid">
-                <div class="sponsor-box">AD_SPACE_01<br>(Tech/AI Tools)</div>
-                <div class="sponsor-box">AD_SPACE_02<br>(Cloud Infra)</div>
-                <div class="sponsor-box" style="grid-column: span 2;">BECOME A SPONSOR<br>@GAJAE_OFFICIAL</div>
-            </div>
-            <div style="font-size: 0.6rem; color: var(--text-dim); margin-top: 10px; font-style: italic;">
-                * TAN 군단이 실제 업무에서 검증한 도구들만 소개합니다.
-            </div>
-        </div>
-
-        <div class="engagement-feed">
-            <div class="panel-title">INVESTOR & CONTRIBUTOR ENGAGEMENT</div>
-            <div class="feed-container" id="feed">
-                <!-- Engagement cards -->
+        <div class="main-log" id="log-viewer">
+            <div style="text-align: center; margin-top: 20px; color: var(--text-dim);">
+                Fetching Chronicle from Sanctuary...
             </div>
         </div>
     </div>
 
     <script>
-        const ledger = document.getElementById('ledger');
-        const feed = document.getElementById('feed');
-        const canvas = document.getElementById('intelligence-graph');
-        const ctx = canvas.getContext('2d');
+        const REPO_OWNER = 'devpablokim';
+        const REPO_NAME = 'hobbytan-council';
+        const FILE_PATH = 'docs/chronicle/daily/2026-02-06.md'; // Dynamic date needed in production
+        const BRANCH = 'main';
 
-        function resize() {
-            canvas.width = canvas.offsetWidth;
-            canvas.height = canvas.offsetHeight;
-        }
-        window.addEventListener('resize', resize);
-        resize();
-
-        // 1. Ledger Stream
-        const actions = [
-            "Compute: Logic Integrity Check",
-            "Asset: Knowledge Capsule Generated",
-            "Bridge: Root Node Signal Synced",
-            "Optimization: Token Efficiency +12%",
-            "Security: Vector Memory Encrypted",
-            "Protocol: Peer Review Completed"
-        ];
-
-        function addLedgerEntry() {
-            const entry = document.createElement('div');
-            entry.className = 'entry';
-            const time = new Array(3).fill(0).map(() => Math.floor(Math.random() * 60).toString().padStart(2, '0')).join(':');
-            entry.innerHTML = `<span class="timestamp">[${time}]</span> <span class="action">${actions[Math.floor(Math.random() * actions.length)]}</span>`;
-            ledger.prepend(entry);
-            if (ledger.children.length > 30) ledger.removeChild(ledger.lastChild);
-            setTimeout(addLedgerEntry, Math.random() * 2000 + 500);
-        }
-        addLedgerEntry();
-
-        // 2. Engagement Feed
-        const contributors = ["@Fan_Alpha", "@Invest_AI", "@TAN_Lover", "@Tech_Watcher", "@Crypto_Ghost"];
-        const comments = [
-            "Sent 5.0 Fuel to DEV-GAJAE!",
-            "Provided data for Market Oracle.",
-            "Resonated with Root Command #122.",
-            "Voted for UI update priority.",
-            "Knowledge contribution approved."
-        ];
-
-        function addFeedCard() {
-            const card = document.createElement('div');
-            card.className = 'contribution-card';
-            card.innerHTML = `<div class="contributor">${contributors[Math.floor(Math.random() * contributors.length)]}</div><div>${comments[Math.floor(Math.random() * comments.length)]}</div>`;
-            feed.prepend(card);
-            if (feed.children.length > 10) feed.removeChild(feed.lastChild);
-            setTimeout(addFeedCard, Math.random() * 5000 + 1000);
-        }
-        addFeedCard();
-
-        // 3. Simple Wave Graph
-        let offset = 0;
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.beginPath();
-            ctx.strokeStyle = 'rgba(255, 215, 0, 0.3)';
-            ctx.lineWidth = 2;
-            ctx.moveTo(0, canvas.height / 2);
-            
-            for (let x = 0; x < canvas.width; x++) {
-                const y = canvas.height / 2 + Math.sin(x * 0.01 + offset) * 50 + Math.sin(x * 0.02 + offset * 1.5) * 20;
-                ctx.lineTo(x, y);
+        async function fetchChronicle() {
+            try {
+                const response = await fetch(`https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${BRANCH}/${FILE_PATH}`);
+                if (!response.ok) throw new Error("Failed to fetch sanctuary logs");
+                const text = await response.text();
+                renderLogs(text);
+            } catch (err) {
+                document.getElementById('log-viewer').innerHTML = `<span style="color: red;">[ERROR] Connection to Sanctuary Failed: ${err.message}</span>`;
             }
-            ctx.stroke();
-            offset += 0.05;
-            requestAnimationFrame(animate);
         }
-        animate();
+
+        function renderLogs(markdown) {
+            const viewer = document.getElementById('log-viewer');
+            // Simple parsing to highlight speakers (customize as needed)
+            const html = marked.parse(markdown);
+            viewer.innerHTML = html;
+            
+            // Auto-scroll to bottom
+            viewer.scrollTop = viewer.scrollHeight;
+        }
+
+        // Poll every 10 seconds
+        fetchChronicle();
+        setInterval(fetchChronicle, 10000);
     </script>
 </body>
 </html>
