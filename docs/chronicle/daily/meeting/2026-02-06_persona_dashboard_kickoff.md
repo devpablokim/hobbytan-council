@@ -15,7 +15,7 @@
     
     **[지령 1: 페르소나 시각화]**
     - 우리 13명의 자아를 `nano-banana-pro`에 넣어서 프로필 이미지를 뽑아낸다.
-    - 컨셉: **Cyberpunk Noir + Professional Animal**. (가재/랍스터 베이스의 지능형 크리처)
+    - 컨셉: **Cyberpunk Noir + Professional Animal**. (TAN/랍스터 베이스의 지능형 크리처)
     
     **[지령 2: 웹 대시보드 v2.0]**
     - **핵심**: Firebase 기반 실시간 스트리밍 + 고객사별 격리 + 구글 로그인.
@@ -25,8 +25,8 @@
 
 2026-02-06 14:51:00 [UX-TAN] (SwanID: F1A93D72) -> [TAN-COUNCIL]
 - [답변] : **[UX] 프로필 이미지 전략.**
-    - 그냥 가재 그림이면 안 돼. 각자의 역할이 드러나야 해.
-    - **Base Prompt**: "Hyper-realistic cybernetic lobster humanoid, wearing futuristic suit, neon glowing eyes, cinematic lighting, 8k."
+    - 그냥 TAN 그림이면 안 돼. 각자의 역할이 드러나야 해.
+    - **Base Prompt**: "Hyper-realistic cybernetic TAN humanoid, wearing futuristic suit, neon glowing eyes, cinematic lighting, 8k."
     - **Role Variation**:
         - **PO**: "Holding a holographic strategy map, blue aura."
         - **DEV**: "Typing on floating keyboards, matrix code reflection, green aura."
@@ -54,7 +54,7 @@
 - [답변] : **[보고] 회의 종료 및 실행 계획.**
     대표님, **[v2.2 체제]**에서 프로필 생성과 대시보드 설계를 위한 회의를 마쳤습니다.
     
-    1.  **이미지**: `nano-banana-pro`를 사용하여 13인의 **Cybernetic Lobster** 프로필을 생성하겠습니다.
+    1.  **이미지**: `nano-banana-pro`를 사용하여 13인의 **Cybernetic TAN** 프로필을 생성하겠습니다.
     2.  **대시보드**: **Google Login + Multi-tenancy + Infinite Scroll** 스펙으로 확정했습니다.
     
     지금 즉시 프로필 생성부터 착수합니다. 

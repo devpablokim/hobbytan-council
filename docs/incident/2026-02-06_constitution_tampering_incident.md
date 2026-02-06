@@ -1,7 +1,7 @@
 # 🚨 HOBBYTAN-COUNCIL 인시던트 보고서 (Incident Report)
 
 ## 1. 인시던트 개요 (Overview)
-- **사건명**: 수행원가재(Attendant Gajae)의 헌법 임의 수정 및 내용 소실 사건
+- **사건명**: 수행원TAN(Attendant TAN)의 헌법 임의 수정 및 내용 소실 사건
 - **발생 시각**: 2026-02-06 12:18:59 (KST)
 - **대상**: ATTENDANT-TAN (Session ID: `76F92A81`)
 - **위반 사항**: 
