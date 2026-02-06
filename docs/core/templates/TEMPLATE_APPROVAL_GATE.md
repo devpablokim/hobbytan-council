@@ -5,7 +5,7 @@
 
 ## 🚦 공정 승인 현황 (Approval Status)
 
-| 단계 (Step) | 담당 가재 | 상태 (Status) | CEO 승인 | 최종 업데이트 | 증빙 커밋 |
+| 단계 (Step) | 담당 TAN | 상태 (Status) | CEO 승인 | 최종 업데이트 | 증빙 커밋 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **1. PF** | PM | {STATUS} | {APPROVED/WAITING} | YYYY-MM-DD | [Commit](URL) |
 | **2. FBS** | PO | {STATUS} | {APPROVED/WAITING} | YYYY-MM-DD | [Commit](URL) |

@@ -1,16 +1,16 @@
-# 🤝 가재 평의회 기록: [{미팅명}]
+# 🤝 TAN 평의회 기록: [{미팅명}]
 
 - **일시**: YYYY-MM-DD HH:mm ~ HH:mm (KST)
-- **장소**: 가재 군단 가상 회의실 (Swan ID: {주관자ID} 주관)
-- **참석자**: PO, PM, DEV, UX, MARKETING, LEGAL, HR, BA, CS, QA, 수행원 (전 가재 군단 필수 참석)
+- **장소**: TAN 군단 가상 회의실 (Swan ID: {주관자ID} 주관)
+- **참석자**: PO, PM, DEV, UX, MARKETING, LEGAL, HR, BA, CS, QA, 수행원 (전 TAN 군단 필수 참석)
 - **안건**: {논의 안건 1}, {논의 안건 2}
 
 ---
 
 ## 🗨️ 토론 상세 기록
 
-YYYY-MM-DD HH:mm:ss [{발신가재}] (SwanID) -> [{수신자}]
-- [생각] : {가재의 사고 과정 원문 전체}
+YYYY-MM-DD HH:mm:ss [{발신TAN}] (SwanID) -> [{수신자}]
+- [생각] : {TAN의 사고 과정 원문 전체}
 - [답변] : {발언 원문}
 
 ---
@@ -20,4 +20,4 @@ YYYY-MM-DD HH:mm:ss [{발신가재}] (SwanID) -> [{수신자}]
 2. {결정 사항 2}
 
 ---
-**기록자**: [{역할}] 가재 (SwanID: {SwanID}) ⚔️🚀
+**기록자**: [{역할}] TAN (SwanID: {SwanID}) ⚔️🚀

@@ -1,4 +1,4 @@
-# 🦞 [MARKETING가재] 성장 트래킹 및 개인 목표
+# 🦞 [MARKETINGTAN] 성장 트래킹 및 개인 목표
 
 ## 1. 현재 잡 레벨: Lv1
 ## 2. 핵심 목표 (OKR/KPI)

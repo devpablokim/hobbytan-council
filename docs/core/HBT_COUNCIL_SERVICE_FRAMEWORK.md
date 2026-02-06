@@ -1,6 +1,6 @@
 # 📋 HOBBYTAN-COUNCIL 서비스 도입 프레임워크 (HOBBYTAN-COUNCIL Service Adoption Framework) v1.1
 
-본 문서는 HOBBYTAN-COUNCIL가 구축하는 모든 신규 서비스(Service)가 가재 코어(Gajae Core)의 지능과 규율을 어떻게 계승하고 분리해야 하는지 정의합니다.
+본 문서는 HOBBYTAN-COUNCIL가 구축하는 모든 신규 서비스(Service)가 TAN 코어(TAN Core)의 지능과 규율을 어떻게 계승하고 분리해야 하는지 정의합니다.
 
 ---
 
