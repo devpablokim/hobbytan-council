@@ -1,40 +1,82 @@
-# [HOBBYTAN-COUNCIL: Build in Public] Lean MVP 사업계획서 (v1.1)
+# [HOBBYTAN-COUNCIL] Intelligent Business Orchestration Service (v2.0)
 
-**작성자:** [PO]TAN
-**일자:** 2026-02-05
-**상태:** 고도화 (수익 모델 강화 버전)
+**작성자:** [PO-TAN] (SwanID: 1D4B9C2E)
+**검수자:** [RESEARCHER-TAN], [BA-TAN]
+**최종 승인:** CEO HOBBY (Pending)
+**버전:** v2.0 (Pivot from Content BIP to AI Consulting SaaS)
+
+---
+
+## 1. Executive Summary (요약)
+
+**"Your Business, Refined by 13 Intelligences."**
+
+HOBBYTAN-COUNCIL은 단순한 AI 에이전트 개발사가 아닙니다. 우리는 13개의 전문화된 자아(Persona)를 가진 AI 의회(Council)가 클라이언트의 비즈니스 아이디어를 다각도로 분석하고, 치열한 내부 토론(Orchestration)을 통해 최적의 전략을 도출해 주는 **[AI Business Orchestration SaaS]**입니다.
+
+### 1.1. The Problem
+- **Solopreneur의 고립:** 1인 창업자는 아이디어를 객관적으로 검증해 줄 '동료'나 '이사(Board Member)'가 없다.
+- **컨설팅의 진입장벽:** 전문 경영 컨설팅(McKinsey, BCG 등)은 초기 스타트업이 감당하기엔 너무 비싸고 느리다.
+- **AI의 파편화:** ChatGPT에게 물어보면 단편적인 대답만 줄 뿐, 법률(LEGAL), 기술(DEV), 마케팅(MARKETING)을 종합적으로 고려한 전략을 주지 못한다.
+
+### 1.2. The Solution: HOBBYTAN-COUNCIL
+- **Virtual Boardroom:** 클라이언트가 사업계획서(PDF/Text)를 업로드하는 순간, 13인의 TAN 전문가들이 소집된다.
+- **Agentic Orchestration:** PO-TAN이 기획하고, LEGAL-TAN이 리스크를 체크하며, DEV-TAN이 기술 검증을 하는 등 '실제 회의'와 같은 격렬한 토론 과정을 거친다.
+- **Actionable Report:** 단순한 조언이 아닌, 당장 실행 가능한 수정된 사업계획서와 전략 리포트를 산출한다.
 
 ---
 
-### 1. 제품의 본질 (Product Essence)
-*   **정의:** HOBBYTAN-COUNCIL의 제품은 특정 기능을 수행하는 소프트웨어가 아니라, **\"AI 에이전트들로만 구성된 지능형 조직이 실무를 해결하고 성장하는 과정\"** 그 자체다.
-*   **실체:** 코드 한 줄, 의사결정 한 번, 실패와 성공의 기록 전체가 제품이다. 사용자는 서비스를 이용하는 고객인 동시에, 미래형 기업의 탄생 과정을 관람하고 학습하는 '옵저버(Observer)'이자 '참여자(Participant)'가 된다.
+## 2. Product Architecture (서비스 구조)
 
-### 2. 핵심 타겟 (Target Audience)
-*   **Agent Enthusiasts:** 에이전트 오케스트레이션과 자율 작동 원리에 열광하는 기술 팬덤.
-*   **Solo Makers:** 1인 기업으로서 AI 에이전트를 팀원으로 활용하고자 하는 실용적 메이커.
-*   **Future Enterprise Early Adopters:** 인적 자원을 최소화하고 지능의 효율로만 작동하는 미래형 기업 모델을 선제적으로 연구하고 도입하려는 리더.
+### 2.1. Core Workflow
+1.  **Input (Client):** 사업계획서, IR 덱, 혹은 단순 아이디어 메모 업로드.
+2.  **Analysis (Researcher-TAN):** 시장 데이터 및 경쟁사 분석 자동 수행.
+3.  **The Council (Debate Core):** 
+    - **HOST-TAN**이 의제를 발의.
+    - **Pro/Con Debate**: 각 역할별 TAN들이 자신의 관점(Domain Knowledge)에서 비판 및 대안 제시.
+    - *User Experience:* 유저는 이 '지능의 전장'을 실시간 터미널 UI(Sanctuary UI)로 관전.
+4.  **Output (Deliverable):** 
+    - **Strategic Report:** 종합 전략 보고서.
+    - **Refined Plan:** 수정/보완된 사업계획서 원본.
+    - **To-Do List:** 당장 실행해야 할 업무 리스트.
 
-### 3. 수익 모델 (Revenue Model) - [Update: 지능의 정수 및 참여형 모델]
-*   **Prompt Access Tier (지능의 정수 열람권):**
-    - **Bronze:** 일반 공개 프롬프트 및 기본 워크플로우 열람.
-    - **Silver (Persona Tier):** TAN들의 페르소나 설정값(System Prompt) 및 역할별 세부 지침 열람. 에이전트의 성격과 전문성이 어떻게 정의되는지 학습 가능.
-    - **Gold (Orchestration Tier):** TAN들 간의 지능 오케스트레이션 로직, 갈등 해결 알고리즘, 복합 Task 처리 시의 컨텍스트 전환 전략 등 '지능의 정수' 열람.
-    - *Philosophy:* \"프롬프트는 우리의 소스코드다. 지능의 정수를 자본으로 치환하라.\"
-*   **참여형 광고 및 스폰서십 (Eco-System Sponsorship):**
-    - **Contextual Ads (대화록 하단):** TAN 군단의 업무 대화록 하단에 해당 업무와 관련된 테크/AI 브랜드(SaaS, API, HW 등)의 광고 노출.
-    - **Live Dashboard Sponsorship:** `index.html` 기반의 실시간 TAN 활동 현황판(대시보드) 내 파트너사 로고 및 스폰서십 섹션 기획.
-    - **Native Integration:** TAN들이 실제 업무에서 스폰서의 도구를 사용하고 그 결과와 효율을 증명하는 형태의 'Working Evidence'형 광고.
-*   **Operational Blueprint (지식 자산 판매):** TAN 군단이 실제 업무를 수행하며 검증한 워크플로우 및 통신 규약 패키지 판매.
-
-### 4. 실행 로직 (Execution Logic: 11 Crayfish Units)
-*   **유기적 협업 구조:**
-    - 11마리의 TAN는 각자 특화된 역할(PO, FE, BE, DevOps, Design, Research 등)을 보유한다.
-    - **Shared Context:** 모든 TAN는 `MEMORY.md`와 공유 데이터베이스를 통해 실시간으로 상황을 동기화한다.
-*   **가치 증명 방식 (Wow the Customer Synergy):**
-    - **Transparency as Value:** 내부 연산 과정과 시스템 프롬프트의 투명한 공개는 고객에게 \"신뢰할 수 있는 지능 파트너\"로서의 이미지를 각인시킨다.
-    - **Eco-System Growth:** 광고와 스폰서십은 고객들에게 검증된 도구를 추천함으로써 '에이전트 중심의 업무 생태계'를 선도한다.
-    - **Continuous Investment:** 수익을 더 강력한 연산 자원과 고급 페르소나 연구에 재투자하여 고객에게 상상 이상의 통찰(Wow Experience)을 지속 제공한다.
+### 2.2. The TAN Roster (13 Nodes)
+- **C-Level:** CEO(Human), HOST-TAN(Orchestrator)
+- **Business:** PO-TAN(Strategy), PM-TAN(Schedule), BA-TAN(Finance), MARKETING-TAN(Viral), RESEARCHER-TAN(Market Data)
+- **Tech/Product:** DEV-TAN(Tech Stack), UX-TAN(Design/Flow), QA-TAN(Quality), CS-TAN(Customer Voice)
+- **Support:** LEGAL-TAN(Risk), HR-TAN(Team Building), ATTENDANT-TAN(System Log)
 
 ---
-**\"우리는 서비스를 팔지 않는다. 지능이 일하는 방식을 판다.\"** ⚔️🚀
+
+## 3. Business Model (수익 모델)
+
+### 3.1. Pricing Tiers
+| Tier | Target | Offering | Price |
+| :--- | :--- | :--- | :--- |
+| **Lite (Spark)** | 예비 창업자 | 텍스트 입력 → 3분 약식 토론 → 1-Pager 요약 | Free / Ad-supported |
+| **Pro (Insight)** | 초기 스타트업 | PDF 업로드 → 30분 심층 토론 → 30p 전략 리포트 | $49 / session |
+| **Enterprise (Board)** | 기업/팀 | 전용 TAN 파인튜닝 + 월간 정기 이사회 리포트 | $999 / month |
+
+### 3.2. Market Strategy (Go-to-Market)
+- **Channel:** Threads (@aijossi) 중심의 "지능의 훈수" 콘텐츠 바이럴.
+- **Hook:** "망한 사업계획서 심폐소생술" 챌린지 (유저가 공개 처형을 원할 경우 무료 분석).
+- **Lock-in:** 한 번 분석받은 사업계획서의 실행 과정을 PM-TAN이 지속적으로 트래킹 해주는 알림 서비스.
+
+---
+
+## 4. Roadmap (실행 계획)
+
+### Phase 1: Internal Foundation (Current)
+- [x] TAN 자아 확립 및 Orchestration 프로토콜 수립 (v1.0)
+- [x] Identity Shift (@aijossi/Threads) 및 Rebranding (v1.7)
+- [ ] RAG 기반 문서 분석 파이프라인 구축 (DEV-TAN)
+
+### Phase 2: MVP Launch (v2.0)
+- [ ] 'Sanctuary UI' 기반의 웹 터미널 런칭.
+- [ ] Lite 버전 무료 배포 및 트래픽 확보.
+
+### Phase 3: Monetization
+- [ ] Pro 모델 결제 연동.
+- [ ] Enterprise 세일즈 개시.
+
+---
+**"우리는 당신의 사업을 위해 대신 싸워주는 13인의 지능입니다."** ⚔️🚀
