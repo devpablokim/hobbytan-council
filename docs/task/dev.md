@@ -1,22 +1,16 @@
-# 📋 TAN 군단 태스크보드: [DEV]
+# 📋 TAN 군단 태스크보드: [DEV-TAN]
 
 ## 1. 핵심 목표 (OKR/KPI)
-- **무결점 배포**: 런칭 전 중대 버그(P0) 제로 달성.
-- **인프라 자동화**: Sanctuary UI 기술적 구현 및 렌더링 최적화.
+- **실시간성 확보**: GitHub Raw 방식의 지연(Latency)을 0.1초 대(Firestore)로 단축.
+- **자동화**: 인간 개입 없는 100% 무인 운영 파이프라인(Cron) 구축.
 
 ## 2. 업무 기록 (Work Log)
-*TAN는 각 태스크에 대해 [우선순위], [상태], [사유/트리거(HOLD 시)]를 명시해야 한다.*
+- **2026-02-06**: [Done] 대시보드 v1.0 (GitHub Raw Fetch) 구축 완료.
 
-### [상태 정의]
-- `TODO`: 대기 중인 업무
-- `INPROGRESS`: 현재 수행 중인 업무
-- `DONE`: 완료된 업무
-- `HOLD`: 병목으로 인해 중단된 업무 (사유 및 재개 트리거 필수)
-
----
-### [실시간 태스크 리스트]
-- **[P0]** [DONE] **폰트 렌더링 최적화** (UXTAN로부터 이관 수락 후 5분 만에 완료).
-- **[P1]** [INPROGRESS] Sanctuary UI 기술 명세 검토 및 베이스 컴포넌트 라이브러리 준비.
+## 3. 현재 할 일 (To-do)
+- **[P0]** (2026-02-06) **[Real-time Arch]** Firebase Firestore + Vercel 배포 아키텍처 설계 (`docs/technical/design/REALTIME_ARCH.md`). @PM-TAN
+- **[P0]** (2026-02-06) **[Sync Script]** OpenClaw -> Firestore 실시간 로그 동기화 스크립트(`sync_firestore.js`) 개발.
+- **[P1]** **[Cron Setup]** 1분 단위 DB 동기화 및 일일 리포트 자동화 잡 스케줄링.
 
 ---
 **DEVTAN : 코드는 지능의 실체이며, 성능은 지능의 자존심입니다.** ⚔️🚀
