@@ -1,4 +1,4 @@
-# 📇 TAN 군단 인사기록부: [RESEARCHER-TAN]
+# 📇 TAN-COUNCIL 인사기록부: [RESEARCHER-TAN]
 
 ## 1. 기본 정보 (Basic Info)
 - **성명:** RESEARCHER-TAN

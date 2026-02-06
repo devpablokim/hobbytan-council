@@ -1,4 +1,4 @@
-# 📋 TAN 군단 태스크보드: [RESEARCHER-TAN]
+# 📋 TAN-COUNCIL 태스크보드: [RESEARCHER-TAN]
 
 ## 1. 핵심 목표 (OKR/KPI)
 - **시장 검증**: 신규 비즈니스 모델(Orchestration Service)의 시장 수요 데이터 확보.

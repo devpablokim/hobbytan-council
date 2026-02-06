@@ -8,7 +8,7 @@
 
 ## 2. TAN 평의회 리뷰 기록 (Collaborative Review)
 - **리뷰 미팅 링크**: [P1 데이터 오염 재발 공동 리뷰 세션](https://github.com/yuna-studio/yuna-openclaw/blob/main/docs/chronicle/daily/meeting/2026-02-06_data_leak_review_session.md)
-- **참석자**: 전 TAN 군단 (수행원, PM, LEGAL, DEV, HR)
+- **참석자**: 전 TAN-COUNCIL (수행원, PM, LEGAL, DEV, HR)
 
 ### [TAN별 원인 분석 (5-Whys)]
 - **PMTAN**: 스크립트 내 `git add .` 사용으로 인한 공정 범위 제어 실패.

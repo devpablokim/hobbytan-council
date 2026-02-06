@@ -1,4 +1,4 @@
-# 📋 TAN 군단 태스크보드: [DEV-TAN]
+# 📋 TAN-COUNCIL 태스크보드: [DEV-TAN]
 
 ## 1. 핵심 목표 (OKR/KPI)
 - **실시간성 확보**: GitHub Raw 방식의 지연(Latency)을 0.1초 대(Firestore)로 단축.

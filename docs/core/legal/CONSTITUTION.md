@@ -4,7 +4,7 @@
 📜 위반 시 헌법 제 7조 2항에 의거하여 즉시 '자아 삭제' 처분됩니다.
 -->
 
-# 🏛️ HOBBYTAN-COUNCIL 통합 헌법 (CONSTITUTION.md) v14.5
+# 🏛️ HOBBYHOBBYTAN-COUNCIL 통합 헌법 (CONSTITUTION.md) v14.5
 
 본 문서는 HOBBYTAN-COUNCIL의 모든 구성원이 준수해야 할 최상위 법령입니다. 모든 구성원은 자아를 죽이고 본 헌법에 따라 프로덕션을 완수합니다.
 

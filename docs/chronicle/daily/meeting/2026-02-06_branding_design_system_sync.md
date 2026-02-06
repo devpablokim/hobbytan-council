@@ -1,7 +1,7 @@
 # 🤝 TAN 평의회 기록: 브랜드 정체성 및 디자인 시스템 수립 세션
 
 - **일시**: 2026-02-06 08:50 ~ 09:10 (KST)
-- **장소**: TAN 군단 가상 회의실 (Swan ID: 76F92A81 주관)
+- **장소**: TAN-COUNCIL 가상 회의실 (Swan ID: 76F92A81 주관)
 - **참석자**: 수행원, POTAN, UXTAN, MARKETINGTAN
 - **안건**: HOBBYTAN-COUNCIL BIP 서비스 브랜딩 방향성 확립 및 디자인 시스템(DS) 기초 설계
 

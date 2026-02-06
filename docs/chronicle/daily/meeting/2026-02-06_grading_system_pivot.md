@@ -1,7 +1,7 @@
 # 🤝 TAN 평의회 기록: [등급제 기능 폐기 및 MVP 전략 피벗 세션]
 
 - **일시**: 2026-02-06 10:55 ~ 11:10 (KST)
-- **장소**: TAN 군단 가상 회의실 (Swan ID: 1D4B9C2E 주관)
+- **장소**: TAN-COUNCIL 가상 회의실 (Swan ID: 1D4B9C2E 주관)
 - **참석자**: POTAN, BATAN, MARKETINGTAN, UXTAN, 수행원
 - **안건**: CEO 지시에 따른 '지능 등급제' 기능 폐기 및 대안 전략 수립
 

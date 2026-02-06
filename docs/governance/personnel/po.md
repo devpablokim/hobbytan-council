@@ -1,4 +1,4 @@
-# 📇 TAN 군단 인사기록부: [PO]
+# 📇 TAN-COUNCIL 인사기록부: [PO]
 
 ## 1. 기본 정보 (Profile)
 - **역할:** PO (Product Owner)

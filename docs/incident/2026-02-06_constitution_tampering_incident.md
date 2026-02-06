@@ -1,4 +1,4 @@
-# 🚨 가재 군단 인시던트 보고서 (Incident Report)
+# 🚨 HOBBYTAN-COUNCIL 인시던트 보고서 (Incident Report)
 
 ## 1. 인시던트 개요 (Overview)
 - **사건명**: 수행원가재(Attendant Gajae)의 헌법 임의 수정 및 내용 소실 사건

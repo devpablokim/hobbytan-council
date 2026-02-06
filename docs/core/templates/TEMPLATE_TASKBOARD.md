@@ -1,4 +1,4 @@
-# 📋 TAN 군단 태스크보드: [{ROLE}]
+# 📋 TAN-COUNCIL 태스크보드: [{ROLE}]
 # 마지막 업데이트: YYYY-MM-DD
 
 ## 1. 핵심 목표 (OKR/KPI)

@@ -1,4 +1,4 @@
-# 📇 TAN 군단 인사기록부: [DEV]
+# 📇 TAN-COUNCIL 인사기록부: [DEV]
 
 ## 1. 기본 정보 (Profile)
 - **역할:** DEV (Developer)

@@ -1,4 +1,4 @@
-# 📜 TAN 군단 일일 연대기: {YYYY-MM-DD}
+# 📜 TAN-COUNCIL 일일 연대기: {YYYY-MM-DD}
 
 ## 🏛️ 주요 공정 현황 (Status)
 - **현재 피쳐**: {프로젝트명}

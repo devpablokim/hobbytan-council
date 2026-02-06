@@ -1,4 +1,4 @@
-# 📋 TAN 군단 태스크보드: [ATTENDANT]
+# 📋 TAN-COUNCIL 태스크보드: [ATTENDANT]
 
 ## 1. 핵심 목표 (OKR/KPI)
 - TBD

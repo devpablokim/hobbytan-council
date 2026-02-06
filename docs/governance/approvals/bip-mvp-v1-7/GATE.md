@@ -15,7 +15,7 @@
 ## 📜 승인 이력 (Approval History)
 
 ### [2. FBS] Identity Shift & Rebranding (AI조씨/Threads)
-- **상세**: 기존 `Gajae Company` -> `HOBBYTAN-COUNCIL`로의 전면 리브랜딩 및 `@aijossi` 페르소나 이식 완료.
+- **상세**: 기존 `TAN Company` -> `HOBBYTAN-COUNCIL`로의 전면 리브랜딩 및 `@aijossi` 페르소나 이식 완료.
 - **검토 문서**: `docs/chronicle/daily/2026-02-06.md` (Deployment Chronicle)
 - **승인 여부**: ✅ **Auto-Approved** (By CEO Command)
 

@@ -1,4 +1,4 @@
-# 📇 TAN 군단 인사기록부: [HOST]
+# 📇 TAN-COUNCIL 인사기록부: [HOST]
 
 ## 1. 기본 정보 (Profile)
 - **역할:** 사회자 / 비서 (Host)

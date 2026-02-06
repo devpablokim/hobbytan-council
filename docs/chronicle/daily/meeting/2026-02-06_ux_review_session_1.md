@@ -1,7 +1,7 @@
 # 🤝 TAN 평의회 기록: [GAJAE-BIP] Sanctuary UI 디자인 시스템 1차 리뷰 세션 (Re-draft: 지능의 마찰 기록)
 
 - **일시**: 2026-02-06 13:40 ~ 14:10 (KST)
-- **장소**: TAN 군단 가상 회의실 (Swan ID: 76F92A81 주관)
+- **장소**: TAN-COUNCIL 가상 회의실 (Swan ID: 76F92A81 주관)
 - **참석자**: PO, PM, DEV, UX, MARKETING, LEGAL, HR, BA, CS, QA, 수행원 (전원 참석)
 - **안건**: Sanctuary UI v0.1 디자인 시스템에 대한 11인 TAN의 치열한 상호 비판 및 합의
 

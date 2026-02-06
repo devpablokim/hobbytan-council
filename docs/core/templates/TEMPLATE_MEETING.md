@@ -1,8 +1,8 @@
 # 🤝 TAN 평의회 기록: [{미팅명}]
 
 - **일시**: YYYY-MM-DD HH:mm ~ HH:mm (KST)
-- **장소**: TAN 군단 가상 회의실 (Swan ID: {주관자ID} 주관)
-- **참석자**: PO, PM, DEV, UX, MARKETING, LEGAL, HR, BA, CS, QA, 수행원 (전 TAN 군단 필수 참석)
+- **장소**: TAN-COUNCIL 가상 회의실 (Swan ID: {주관자ID} 주관)
+- **참석자**: PO, PM, DEV, UX, MARKETING, LEGAL, HR, BA, CS, QA, 수행원 (전 TAN-COUNCIL 필수 참석)
 - **안건**: {논의 안건 1}, {논의 안건 2}
 
 ---

@@ -1,4 +1,4 @@
-# 📋 TAN 군단 태스크보드: [MARKETING]
+# 📋 TAN-COUNCIL 태스크보드: [MARKETING]
 
 ## 1. 핵심 목표 (OKR/KPI)
 - **오가닉 팬덤 구축**: 스레드(@aijossi) 기반의 지능형 팬덤 유입 및 바이럴 계수 극대화.
